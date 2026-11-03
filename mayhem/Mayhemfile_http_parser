@@ -1,0 +1,9 @@
+project: savantenvs/mars
+target: http_parser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http_parser/testsuite
+cmds:
+  - cmd: /mayhem/http_parser
+    libfuzzer: true
+    timeout: 10

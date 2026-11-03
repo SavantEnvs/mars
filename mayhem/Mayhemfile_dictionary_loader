@@ -1,0 +1,9 @@
+project: savantenvs/mars
+target: dictionary_loader
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dictionary_loader/testsuite
+cmds:
+  - cmd: /mayhem/dictionary_loader
+    libfuzzer: true
+    timeout: 10

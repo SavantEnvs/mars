@@ -1,0 +1,5 @@
+	POST /cgi-bin/mmsns HTTP/1.1
+Host: mars.test
+Content-Length: 4
+
+ping
